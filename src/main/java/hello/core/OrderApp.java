@@ -13,10 +13,11 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class OrderApp {
     public static void main(String[] args) {
 
+//        순수 자바 코드로 DI를 직접 구현한 방식(AppConfig 클래스에서 직접 서비스 객체들을 생성하고 의존성을 주입)
 //        AppConfig appConfig = new AppConfig();
 //        MemberService memberService = appConfig.memberService();
 //        OrderService orderService = appConfig.orderService();
-        //순수 자바 코드로 DI를 직접 구현한 방식(AppConfig 클래스에서 직접 서비스 객체들을 생성하고 의존성을 주입)
+
 
         //스프링 컨테이너 생성
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
